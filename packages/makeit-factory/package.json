@@ -1,0 +1,31 @@
+{
+  "name": "makeit-factory",
+  "version": "1.0.0",
+  "description": "Simplifies the creation of database-agnostic factories in JavaScript/TypeScript, streamlining the development process",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "dev": "tsc -p ./tsconfig.json --watch",
+    "build:cjs": "tsc  -p ./tsconfig.json --module commonjs --outDir ./dist/cjs",
+    "build:esm": "tsc  -p ./tsconfig.json --module esnext --outDir ./dist/esm",
+    "build:types": "tsc -p ./tsconfig.json --declaration --emitDeclarationOnly --declarationDir ./types",
+    "build": "pnpm build:cjs && pnpm  build:esm && pnpm build:types"
+  },
+  "keywords": [
+    "fake",
+    "fake-data",
+    "factories",
+    "testing",
+    "factories",
+    "factory-js",
+    "factory-ts"
+  ],
+  "author": "Federico Mameli",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  }
+}
