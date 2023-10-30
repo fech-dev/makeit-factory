@@ -1,0 +1,3 @@
+export const FACTORY_DEFINITION_STATE_KEY = '_definition';
+export const OVERRIDE_STATE_KEY = '_override';
+export const RESERVED_STATE_KEYS = [FACTORY_DEFINITION_STATE_KEY, OVERRIDE_STATE_KEY];
