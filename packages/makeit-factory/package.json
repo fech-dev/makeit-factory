@@ -1,6 +1,6 @@
 {
   "name": "makeit-factory",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "Simplify the creation of fake data within your database seeders or tests with factories.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
