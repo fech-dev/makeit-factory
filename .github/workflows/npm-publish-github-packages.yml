@@ -17,10 +17,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: pnpm install
-      - run: cd packages/makeit-factory
-      - run: pnpm test
-      - run: pnpm build
+      - run: |
+          pnpm install
+          cd packages/makeit-factory
+          pnpm test
+          pnpm build
 
   publish-gpr:
     needs: build
@@ -37,7 +38,8 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
-      - run: pnpm install
-      - run: pnpm publish
+      - run: | 
+          pnpm install
+          pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
