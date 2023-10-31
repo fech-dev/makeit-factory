@@ -1,12 +1,13 @@
 {
   "name": "makeit-factory",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "Simplify the creation of fake data within your database seeders or tests with factories.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "types/index.d.ts",
   "scripts": {
     "dev": "tsc -p ./tsconfig.json --watch",
+    "test": "vitest run",
     "build:cjs": "tsc  -p ./tsconfig.json --module commonjs --outDir ./dist/cjs",
     "build:esm": "tsc  -p ./tsconfig.json --module esnext --outDir ./dist/esm",
     "build:types": "tsc -p ./tsconfig.json --declaration --emitDeclarationOnly --declarationDir ./types",
