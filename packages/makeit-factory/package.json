@@ -1,7 +1,7 @@
 {
   "name": "makeit-factory",
   "version": "1.0.0",
-  "description": "Simplifies the creation of database-agnostic factories in JavaScript/TypeScript, streamlining the development process",
+  "description": "Simplify the creation of fake data within your database seeders or tests with factories.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "types/index.d.ts",
