@@ -1,6 +1,6 @@
 {
   "name": "makeit-factory",
-  "version": "1.0.0-rc.3",
+  "version": "1.0.0-rc.4",
   "description": "Simplify the creation of fake data within your database seeders or tests with factories.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -9,6 +9,11 @@
     "directory": "packages/makeit-factory",
     "url": "https://github.com/fech-dev/makeit-factory"
   },
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
   "scripts": {
     "dev": "tsc -p ./tsconfig.json --watch",
     "test": "vitest run",
